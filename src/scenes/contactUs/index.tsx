@@ -1,7 +1,6 @@
 import { SelectedPage } from '@/shared/types'
 import {motion} from 'framer-motion'
 import {useForm} from 'react-hook-form'
-import {email} from '@/formEmail';
 import ContactUsGraphic from '@/assets/ContactUsPageGraphic.png'
 import HText from '@/shared/HText'
 
@@ -67,7 +66,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                 >
                     <form target="_blank" onSubmit={handleSubmit}
                     method='POST'
-                    action= {email}
+                    action= 'https://formsubmit.co/liyawarmate@yahoo.com'
                     >
                         <input 
                             className={inputStyles}
